@@ -26,17 +26,17 @@
 
 @font-face {
     font-family: "Mermaid";
-    src: url("./fonts/Mermaid_Bold_700.ttf");
+    src: url("../fonts/Mermaid_Bold_700.ttf");
 }
 
 @font-face {
     font-family: "Mermaid Swash Caps";
-    src: url("./fonts/Mermaid_Swash_Caps_Bold_700.ttf");
+    src: url("../fonts/Mermaid_Swash_Caps_Bold_700.ttf");
 }
 
 @font-face {
     font-family: "Playfair";
-    src: url("./fonts/PlayfairDisplay-Bold.ttf");
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -129,7 +129,7 @@ footer {
 }
 
 .header-wrapper h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     font-family: var(--secondary-font);
     /* font-style: italic; */
