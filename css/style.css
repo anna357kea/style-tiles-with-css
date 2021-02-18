@@ -1,8 +1,7 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"); */
 
 * {
     box-sizing: border-box;
@@ -27,7 +26,17 @@
 
 @font-face {
     font-family: "Mermaid";
+    src: url("./fonts/Mermaid_Bold_700.ttf");
+}
+
+@font-face {
+    font-family: "Mermaid Swash Caps";
     src: url("./fonts/Mermaid_Swash_Caps_Bold_700.ttf");
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("./fonts/PlayfairDisplay-Bold.ttf");
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -49,6 +58,7 @@ use the fonts in other ways in the font hierarchy etc. */
     --primary-font: "Mermaid", sans-serif;
     --secondary-font: "Work Sans", sans-serif;
     --paragraph-font: "Work Sans", sans-serif;
+    --numbers-font: "Playfair", sans-serif;
     --main-text-color: #000000;
     --white-space: 1rem;
 
@@ -77,7 +87,7 @@ a:hover {
 }
 html {
     font-size: 100%;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
 }
 
 img {
@@ -102,6 +112,7 @@ footer {
 
 .header-wrapper h1 {
     font-size: 2rem;
+    font-family: var(--primary-font);
     /* text-transform: uppercase; */
     /* letter-spacing: -2px; */
     padding-right: 0.75em;
@@ -153,6 +164,7 @@ section {
 }
 
 ul {
+    font-family: var(--primary-font);
     display: flex;
     justify-content: space-between;
 }
@@ -265,12 +277,14 @@ button:focus-within {
 }
 
 .typography-main {
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
+    /* font-family: var(--primary-font); */
 }
 
 .h1-sample {
     font-size: 2.4rem;
     padding-top: 0.5rem;
+    font-family: var(--primary-font);
 }
 
 .h2-sample {
@@ -293,6 +307,11 @@ p.typography-sample {
 strong {
     font-weight: bold;
     color: var(--color-3);
+}
+
+.numbers {
+    font-family: var(--numbers-font);
+    color: var(--primary-button-hover);
 }
 
 em {
